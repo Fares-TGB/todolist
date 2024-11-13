@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="h-screen flex flex-col justify-center items-center">
+      <div>
+        <h1 class="text-2xl font-bold mb-4">TO-DO-LIST</h1>
+        <div>
+          <form id="myForm" class="m-4 flex justify-center justify-around">
+            <label for="newTask ">New Task :</label>
+            <input class="input" type="text" name="newTask" />
+            <button class="button" type="submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="w-1/4 rounded-md border border-neutral-400 bg-neutral-50 px-3 py-2 flex flex-col gap-2"
+        id="taskList"
+      ></div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
